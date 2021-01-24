@@ -1,7 +1,8 @@
 # throwaway
 
 [![Build Status](https://travis-ci.org/cloudcontainers/throwaway.svg?branch=main)](https://travis-ci.org/cloudcontainers/throwaway)
-https://img.shields.io/github/license/cloudcontainers/throwaway
+[![license]](https://img.shields.io/github/license/cloudcontainers/throwaway)
+
 
 Get cycle going
 
