@@ -1,30 +1,28 @@
-# throwaway
+# Project throwaway
 
 [![Build Status](https://travis-ci.org/cloudcontainers/throwaway.svg?branch=main)](https://travis-ci.org/cloudcontainers/throwaway)
 [![License](https://img.shields.io/github/license/cloudcontainers/throwaway.svg)](https://opensource.org/licenses/MIT)
 
-TODO version badge
+A simple first project to check dependencies.
 
-Get cycle going
+## Use python as base platform
 
-## setup python dependencies
-
-Install pytest:
+We need pytest to get a first test going.
 
 ```bash
 pip2 install -U pytest
 ```
 
-Check that we have it:
+Check that we have the latest version.
 
 ```bash
 $ pytest --version
 pytest 6.2.1
 ```
 
-## create first test
+## A first failing test
 
-New file sample:
+Very boring stuff, of course.
 
 ```python
 # content of test_sample.py
@@ -36,7 +34,7 @@ def test_answer():
     assert myfunc(5) == 60
 ```
 
-### travis output
+### Output failing on Travis
 
 After putting in travis config and requirements files.
 
@@ -49,7 +47,7 @@ collected 1 item
 test_sample.py F                                                         [100%]
 ```
 
-## Fix it
+## A first successful test
 
 Correct the error.
 
@@ -60,5 +58,18 @@ def myfunc(x):
     return x + 1
 
 def test_answer():
-    assert myfunc(5) == 60
+    assert myfunc(5) == 6
+```
+
+### Output ok on Travis
+
+```text
+$ pytest
+============================= test session starts ==============================
+platform linux -- Python 3.6.7, pytest-5.4.3, py-1.7.0, pluggy-0.12.0
+rootdir: /home/travis/build/cloudcontainers/throwaway
+collected 1 item
+test_sample.py .                                                         [100%]
+============================== 1 passed in 0.01s ===============================
+The command "pytest" exited with 0.
 ```
