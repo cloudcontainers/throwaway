@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/cloudcontainers/throwaway.svg?branch=main)](https://travis-ci.org/cloudcontainers/throwaway)
 [![License](https://img.shields.io/github/license/cloudcontainers/throwaway.svg)](https://opensource.org/licenses/MIT)
 
+TODO version badge
+
 Get cycle going
 
 ## setup python dependencies
