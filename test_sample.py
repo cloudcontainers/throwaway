@@ -4,6 +4,6 @@ def myfunc(x):
     return x + 1
 
 def test_answer():
-    assert myfunc(5) == 60
+    assert myfunc(5) == 6
 
 
