@@ -37,7 +37,7 @@ def test_answer():
 
 ### Output failing on Travis
 
-After putting in travis config and requirements files.
+After putting in Travis config and requirements files.
 
 ```text
 $ pytest
